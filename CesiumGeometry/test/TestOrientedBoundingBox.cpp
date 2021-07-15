@@ -1,4 +1,4 @@
-#include "Cesium3DTiles/ViewState.h"
+#include "Cesium3DTilesPipeline/ViewState.h"
 #include "CesiumGeometry/OrientedBoundingBox.h"
 #include "catch2/catch.hpp"
 #include <glm/gtc/matrix_transform.hpp>

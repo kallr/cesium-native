@@ -3,7 +3,7 @@ find_package(Doxygen)
 if (DOXYGEN_FOUND)
     set(
         LIB_DIRS
-        ../Cesium3DTiles/include
+        ../Cesium3DTilesPipeline/include
         ../CesiumAsync/include
         ../CesiumGeometry/include
         ../CesiumGeospatial/include
@@ -16,7 +16,7 @@ if (DOXYGEN_FOUND)
     set(DOXYGEN_STRIP_FROM_INC_PATH ${LIB_DIRS})
     set(
         DOXYGEN_EXAMPLE_PATH
-        ../Cesium3DTiles/test
+        ../Cesium3DTilesPipeline/test
         ../CesiumAsync/test
         ../CesiumGeometry/test
         ../CesiumGeospatial/test
