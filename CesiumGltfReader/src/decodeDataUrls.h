@@ -1,12 +1,13 @@
 #pragma once
 
+#include "CesiumGltf/GltfReader.h"
+
 namespace CesiumGltf {
 
 struct ModelReaderResult;
-struct ReaderContext;
 
 void decodeDataUrls(
-    const ReaderContext& context,
+    const GltfReader& reader,
     ModelReaderResult& readModel,
     bool clearDecodedDataUrls);
 } // namespace CesiumGltf

@@ -1,10 +1,11 @@
 #pragma once
 
+#include "CesiumSpecBase/Library.h"
 #include "CesiumJsonReader/IJsonHandler.h"
 #include <any>
 #include <string_view>
 
-namespace CesiumGltf {
+namespace CesiumSpec {
 
 struct ExtensibleObject;
 
@@ -16,4 +17,4 @@ public:
       const std::string_view& extensionName) = 0;
 };
 
-} // namespace CesiumGltf
+} // namespace CesiumSpec

@@ -8,7 +8,7 @@
 
 using namespace CesiumGltf;
 
-CameraJsonHandler::CameraJsonHandler(const ReaderContext& context) noexcept
+CameraJsonHandler::CameraJsonHandler(const CesiumSpec::ReaderContext& context) noexcept
     : NamedObjectJsonHandler(context),
       _orthographic(context),
       _perspective(context),

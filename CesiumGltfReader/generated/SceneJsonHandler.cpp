@@ -8,7 +8,7 @@
 
 using namespace CesiumGltf;
 
-SceneJsonHandler::SceneJsonHandler(const ReaderContext& context) noexcept
+SceneJsonHandler::SceneJsonHandler(const CesiumSpec::ReaderContext& context) noexcept
     : NamedObjectJsonHandler(context), _nodes() {}
 
 void SceneJsonHandler::reset(

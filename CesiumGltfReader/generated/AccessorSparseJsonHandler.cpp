@@ -9,7 +9,7 @@
 using namespace CesiumGltf;
 
 AccessorSparseJsonHandler::AccessorSparseJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context),
       _count(),
       _indices(context),

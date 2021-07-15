@@ -4,7 +4,7 @@
 
 #include "CesiumGltf/AccessorSparseIndices.h"
 #include "CesiumGltf/AccessorSparseValues.h"
-#include "CesiumGltf/ExtensibleObject.h"
+#include "CesiumSpecBase/ExtensibleObject.h"
 #include "CesiumGltf/Library.h"
 #include <cstdint>
 
@@ -13,7 +13,7 @@ namespace CesiumGltf {
  * @brief Sparse storage of attributes that deviate from their initialization
  * value.
  */
-struct CESIUMGLTF_API AccessorSparse final : public ExtensibleObject {
+struct CESIUMGLTF_API AccessorSparse final : public CesiumSpec::ExtensibleObject {
   static inline constexpr const char* TypeName = "AccessorSparse";
 
   /**

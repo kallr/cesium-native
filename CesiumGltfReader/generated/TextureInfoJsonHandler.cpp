@@ -9,7 +9,7 @@
 using namespace CesiumGltf;
 
 TextureInfoJsonHandler::TextureInfoJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context), _index(), _texCoord() {}
 
 void TextureInfoJsonHandler::reset(

@@ -1,6 +1,6 @@
-#include "CesiumGltf/ExtensibleObject.h"
+#include "CesiumSpecBase/ExtensibleObject.h"
 
-using namespace CesiumGltf;
+using namespace CesiumSpec;
 using namespace CesiumUtility;
 
 JsonValue* ExtensibleObject::getGenericExtension(

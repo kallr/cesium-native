@@ -1,12 +1,12 @@
 #include "NamedObjectJsonHandler.h"
 #include "CesiumGltf/NamedObject.h"
-#include <ExtensibleObjectJsonHandler.h>
+#include <CesiumSpecBase/ExtensibleObjectJsonHandler.h>
 #include <string>
 
 using namespace CesiumGltf;
 
 NamedObjectJsonHandler::NamedObjectJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context), _name() {}
 
 void NamedObjectJsonHandler::reset(

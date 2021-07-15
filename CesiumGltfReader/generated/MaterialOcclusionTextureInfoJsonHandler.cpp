@@ -10,7 +10,7 @@ using namespace CesiumGltf;
 
 MaterialOcclusionTextureInfoJsonHandler::
     MaterialOcclusionTextureInfoJsonHandler(
-        const ReaderContext& context) noexcept
+        const CesiumSpec::ReaderContext& context) noexcept
     : TextureInfoJsonHandler(context), _strength() {}
 
 void MaterialOcclusionTextureInfoJsonHandler::reset(

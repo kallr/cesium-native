@@ -140,6 +140,7 @@ add_subdirectory(CesiumGltfReader)
 add_subdirectory(CesiumAsync)
 add_subdirectory(Cesium3DTilesPipeline)
 add_subdirectory(CesiumIonClient)
+add_subdirectory(CesiumSpecBase)
 
 # Private Targets
 # enable_testing() MUST be called before add_subdirectory or no tests

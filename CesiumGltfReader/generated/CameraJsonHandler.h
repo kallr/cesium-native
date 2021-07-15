@@ -5,18 +5,17 @@
 #include "CameraOrthographicJsonHandler.h"
 #include "CameraPerspectiveJsonHandler.h"
 #include "CesiumGltf/Camera.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "NamedObjectJsonHandler.h"
 
 namespace CesiumGltf {
-struct ReaderContext;
 struct Camera;
 
 class CameraJsonHandler : public NamedObjectJsonHandler {
 public:
   using ValueType = Camera;
 
-  CameraJsonHandler(const ReaderContext& context) noexcept;
+  CameraJsonHandler(const CesiumSpec::ReaderContext& context) noexcept;
   void reset(IJsonHandler* pParentHandler, Camera* pObject);
 
   virtual IJsonHandler* readObjectKey(const std::string_view& str) override;

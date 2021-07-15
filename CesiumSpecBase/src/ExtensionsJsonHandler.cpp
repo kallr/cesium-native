@@ -1,8 +1,8 @@
-#include "ExtensionsJsonHandler.h"
-#include "CesiumGltf/GltfReader.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ExtensionsJsonHandler.h"
+#include "CesiumSpecBase/ReaderContext.h"
+#include "CesiumSpecBase/SpecReader.h"
 
-using namespace CesiumGltf;
+using namespace CesiumSpec;
 using namespace CesiumJsonReader;
 
 void ExtensionsJsonHandler::reset(

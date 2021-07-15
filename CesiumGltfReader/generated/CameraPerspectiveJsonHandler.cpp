@@ -9,7 +9,7 @@
 using namespace CesiumGltf;
 
 CameraPerspectiveJsonHandler::CameraPerspectiveJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context),
       _aspectRatio(),
       _yfov(),

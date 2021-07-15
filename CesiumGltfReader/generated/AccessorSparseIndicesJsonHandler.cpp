@@ -7,9 +7,10 @@
 #include <string>
 
 using namespace CesiumGltf;
+using namespace CesiumSpec;
 
 AccessorSparseIndicesJsonHandler::AccessorSparseIndicesJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context),
       _bufferView(),
       _byteOffset(),

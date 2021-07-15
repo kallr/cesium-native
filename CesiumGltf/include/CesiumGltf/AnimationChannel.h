@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CesiumGltf/AnimationChannelTarget.h"
-#include "CesiumGltf/ExtensibleObject.h"
+#include "CesiumSpecBase/ExtensibleObject.h"
 #include "CesiumGltf/Library.h"
 #include <cstdint>
 
@@ -11,7 +11,7 @@ namespace CesiumGltf {
 /**
  * @brief Targets an animation's sampler at a node's property.
  */
-struct CESIUMGLTF_API AnimationChannel final : public ExtensibleObject {
+struct CESIUMGLTF_API AnimationChannel final : public CesiumSpec::ExtensibleObject {
   static inline constexpr const char* TypeName = "AnimationChannel";
 
   /**

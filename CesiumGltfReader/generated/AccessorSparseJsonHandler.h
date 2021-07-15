@@ -4,19 +4,18 @@
 
 #include "AccessorSparseIndicesJsonHandler.h"
 #include "AccessorSparseValuesJsonHandler.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "CesiumJsonReader/IntegerJsonHandler.h"
-#include "ExtensibleObjectJsonHandler.h"
+#include "CesiumSpecBase/ExtensibleObjectJsonHandler.h"
 
 namespace CesiumGltf {
-struct ReaderContext;
 struct AccessorSparse;
 
-class AccessorSparseJsonHandler : public ExtensibleObjectJsonHandler {
+class AccessorSparseJsonHandler : public CesiumSpec::ExtensibleObjectJsonHandler {
 public:
   using ValueType = AccessorSparse;
 
-  AccessorSparseJsonHandler(const ReaderContext& context) noexcept;
+  AccessorSparseJsonHandler(const CesiumSpec::ReaderContext& context) noexcept;
   void reset(IJsonHandler* pParentHandler, AccessorSparse* pObject);
 
   virtual IJsonHandler* readObjectKey(const std::string_view& str) override;

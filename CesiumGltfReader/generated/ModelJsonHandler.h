@@ -8,11 +8,11 @@
 #include "BufferJsonHandler.h"
 #include "BufferViewJsonHandler.h"
 #include "CameraJsonHandler.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "CesiumJsonReader/ArrayJsonHandler.h"
 #include "CesiumJsonReader/IntegerJsonHandler.h"
 #include "CesiumJsonReader/StringJsonHandler.h"
-#include "ExtensibleObjectJsonHandler.h"
+#include "CesiumSpecBase/ExtensibleObjectJsonHandler.h"
 #include "ImageJsonHandler.h"
 #include "MaterialJsonHandler.h"
 #include "MeshJsonHandler.h"
@@ -23,14 +23,13 @@
 #include "TextureJsonHandler.h"
 
 namespace CesiumGltf {
-struct ReaderContext;
 struct Model;
 
-class ModelJsonHandler : public ExtensibleObjectJsonHandler {
+class ModelJsonHandler : public CesiumSpec::ExtensibleObjectJsonHandler {
 public:
   using ValueType = Model;
 
-  ModelJsonHandler(const ReaderContext& context) noexcept;
+  ModelJsonHandler(const CesiumSpec::ReaderContext& context) noexcept;
   void reset(IJsonHandler* pParentHandler, Model* pObject);
 
   virtual IJsonHandler* readObjectKey(const std::string_view& str) override;

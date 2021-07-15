@@ -9,7 +9,7 @@
 using namespace CesiumGltf;
 
 AnimationChannelTargetJsonHandler::AnimationChannelTargetJsonHandler(
-    const ReaderContext& context) noexcept
+    const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context), _node(), _path() {}
 
 void AnimationChannelTargetJsonHandler::reset(

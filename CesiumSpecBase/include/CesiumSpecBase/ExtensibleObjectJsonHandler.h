@@ -1,13 +1,14 @@
 #pragma once
 
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/Library.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "CesiumJsonReader/DictionaryJsonHandler.h"
 #include "CesiumJsonReader/JsonObjectJsonHandler.h"
 #include "CesiumJsonReader/ObjectJsonHandler.h"
 #include "CesiumUtility/JsonValue.h"
 #include "ExtensionsJsonHandler.h"
 
-namespace CesiumGltf {
+namespace CesiumSpec {
 struct ExtensibleObject;
 
 class ExtensibleObjectJsonHandler : public CesiumJsonReader::ObjectJsonHandler {
@@ -28,4 +29,4 @@ private:
       _extras;
   ExtensionsJsonHandler _extensions;
 };
-} // namespace CesiumGltf
+} // namespace CesiumSpec

@@ -8,7 +8,7 @@
 
 using namespace CesiumGltf;
 
-MeshJsonHandler::MeshJsonHandler(const ReaderContext& context) noexcept
+MeshJsonHandler::MeshJsonHandler(const CesiumSpec::ReaderContext& context) noexcept
     : NamedObjectJsonHandler(context), _primitives(context), _weights() {}
 
 void MeshJsonHandler::reset(

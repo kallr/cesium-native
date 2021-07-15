@@ -3,19 +3,18 @@
 #pragma once
 
 #include "CesiumGltf/AnimationSampler.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "CesiumJsonReader/IntegerJsonHandler.h"
-#include "ExtensibleObjectJsonHandler.h"
+#include "CesiumSpecBase/ExtensibleObjectJsonHandler.h"
 
 namespace CesiumGltf {
-struct ReaderContext;
 struct AnimationSampler;
 
-class AnimationSamplerJsonHandler : public ExtensibleObjectJsonHandler {
+class AnimationSamplerJsonHandler : public CesiumSpec::ExtensibleObjectJsonHandler {
 public:
   using ValueType = AnimationSampler;
 
-  AnimationSamplerJsonHandler(const ReaderContext& context) noexcept;
+  AnimationSamplerJsonHandler(const CesiumSpec::ReaderContext& context) noexcept;
   void reset(IJsonHandler* pParentHandler, AnimationSampler* pObject);
 
   virtual IJsonHandler* readObjectKey(const std::string_view& str) override;

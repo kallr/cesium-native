@@ -1,17 +1,17 @@
 #pragma once
 
-#include "CesiumGltf/Library.h"
+#include "CesiumSpecBase/Library.h"
 #include "CesiumUtility/JsonValue.h"
 #include <any>
 #include <unordered_map>
 #include <utility>
 #include <vector>
 
-namespace CesiumGltf {
+namespace CesiumSpec {
 /**
  * @brief The base class for objects in a glTF that have extensions and extras.
  */
-struct CESIUMGLTF_API ExtensibleObject {
+struct CESIUMSPEC_API ExtensibleObject {
   /**
    * @brief Gets an extension given its static type.
    *
@@ -70,4 +70,4 @@ struct CESIUMGLTF_API ExtensibleObject {
    */
   CesiumUtility::JsonValue::Object extras;
 };
-} // namespace CesiumGltf
+} // namespace CesiumSpec

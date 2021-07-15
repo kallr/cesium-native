@@ -4,19 +4,18 @@
 
 #include "AnimationChannelJsonHandler.h"
 #include "AnimationSamplerJsonHandler.h"
-#include "CesiumGltf/ReaderContext.h"
+#include "CesiumSpecBase/ReaderContext.h"
 #include "CesiumJsonReader/ArrayJsonHandler.h"
 #include "NamedObjectJsonHandler.h"
 
 namespace CesiumGltf {
-struct ReaderContext;
 struct Animation;
 
 class AnimationJsonHandler : public NamedObjectJsonHandler {
 public:
   using ValueType = Animation;
 
-  AnimationJsonHandler(const ReaderContext& context) noexcept;
+  AnimationJsonHandler(const CesiumSpec::ReaderContext& context) noexcept;
   void reset(IJsonHandler* pParentHandler, Animation* pObject);
 
   virtual IJsonHandler* readObjectKey(const std::string_view& str) override;

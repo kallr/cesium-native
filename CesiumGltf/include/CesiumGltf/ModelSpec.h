@@ -8,7 +8,7 @@
 #include "CesiumGltf/Buffer.h"
 #include "CesiumGltf/BufferView.h"
 #include "CesiumGltf/Camera.h"
-#include "CesiumGltf/ExtensibleObject.h"
+#include "CesiumSpecBase/ExtensibleObject.h"
 #include "CesiumGltf/Image.h"
 #include "CesiumGltf/Library.h"
 #include "CesiumGltf/Material.h"
@@ -26,7 +26,7 @@ namespace CesiumGltf {
 /**
  * @brief The root object for a glTF asset.
  */
-struct CESIUMGLTF_API ModelSpec : public ExtensibleObject {
+struct CESIUMGLTF_API ModelSpec : public CesiumSpec::ExtensibleObject {
   static inline constexpr const char* TypeName = "Model";
 
   /**

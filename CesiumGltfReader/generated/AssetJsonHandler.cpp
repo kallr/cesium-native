@@ -8,7 +8,7 @@
 
 using namespace CesiumGltf;
 
-AssetJsonHandler::AssetJsonHandler(const ReaderContext& context) noexcept
+AssetJsonHandler::AssetJsonHandler(const CesiumSpec::ReaderContext& context) noexcept
     : ExtensibleObjectJsonHandler(context),
       _copyright(),
       _generator(),

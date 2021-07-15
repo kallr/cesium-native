@@ -1,10 +1,11 @@
 #pragma once
 
-#include "CesiumGltf/IExtensionJsonHandler.h"
+#include "CesiumSpecBase/Library.h"
+#include "CesiumSpecBase/IExtensionJsonHandler.h"
 #include "CesiumJsonReader/ObjectJsonHandler.h"
 #include <memory>
 
-namespace CesiumGltf {
+namespace CesiumSpec {
 struct ReaderContext;
 struct ExtensibleObject;
 
@@ -30,4 +31,4 @@ private:
   std::unique_ptr<IExtensionJsonHandler> _currentExtensionHandler;
 };
 
-} // namespace CesiumGltf
+} // namespace CesiumSpec

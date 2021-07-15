@@ -8,7 +8,7 @@
 
 using namespace CesiumGltf;
 
-SamplerJsonHandler::SamplerJsonHandler(const ReaderContext& context) noexcept
+SamplerJsonHandler::SamplerJsonHandler(const CesiumSpec::ReaderContext& context) noexcept
     : NamedObjectJsonHandler(context),
       _magFilter(),
       _minFilter(),
